@@ -1,10 +1,16 @@
-:root{--brand:#0d6efd;--muted:#6c757d}
+:root{--brand:#0d6efd; --muted:#6c757d; --secondary: #eaaf7f; --primary: #8bd0b6;}
 body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; overflow-x: hidden;}
+
 .badge-cat{background:#f8f9fa;border-radius:.5rem;padding:.25rem .6rem;font-weight:600}
 .service-card{border:1px solid #e9ecef;border-radius:12px;padding:1.25rem;height:100%}
 .maps-img{max-width:100%;height:auto;border-radius:8px}
 .cta{background:linear-gradient(90deg,var(--brand),#4b7cff);color:#fff;padding:2.5rem;border-radius:12px}
-.hero{background: url('../img/bg_main.png'); color: #fff; padding: 6rem 0; height: 100dvh;}
+.hero{background: url('../img/bg_main.png') no-repeat center; color: #fff; padding: 6rem 0; height: 80dvh;}
 .whatsapp-btn{position:fixed;right:16px;bottom:16px;z-index:1060}
 .footer{background:#0b1220;color:#fff;padding:2rem 0}
+
+/* Utilizaveis */
+.text-primary{color:var(--primary)!important}
+.text-secondary{color:var(--secondary)!important}
+
 @media(min-width:992px){.hero{padding:8rem 0}}
