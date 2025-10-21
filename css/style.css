@@ -1,16 +1,170 @@
-:root{--brand:#0d6efd; --muted:#6c757d; --secondary: #eaaf7f; --primary: #8bd0b6;}
-body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; overflow-x: hidden;}
+:root {
+    --brand: #0d6efd;
+    --muted: #6c757d;
 
-.badge-cat{background:#f8f9fa;border-radius:.5rem;padding:.25rem .6rem;font-weight:600}
-.service-card{border:1px solid #e9ecef;border-radius:12px;padding:1.25rem;height:100%}
-.maps-img{max-width:100%;height:auto;border-radius:8px}
-.cta{background:linear-gradient(90deg,var(--brand),#4b7cff);color:#fff;padding:2.5rem;border-radius:12px}
-.hero{background: url('../img/bg_main.png') no-repeat center; color: #fff; padding: 6rem 0; height: 80dvh;}
-.whatsapp-btn{position:fixed;right:16px;bottom:16px;z-index:1060}
-.footer{background:#0b1220;color:#fff;padding:2rem 0}
+    --primary: #547d67; 
+    --primary-hover: #559774; 
+
+    --secondary: #eaaf7f;
+    --secondary-hover: #f0c8aa;
+
+    
+    --dark-green: #06402b;
+    --gscale: #fff8ec; 
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
 
 /* Utilizaveis */
-.text-primary{color:var(--primary)!important}
-.text-secondary{color:var(--secondary)!important}
 
-@media(min-width:992px){.hero{padding:8rem 0}}
+.btn-primary {
+    background-color: var(--primary) !important;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--primary-hover) !important
+}
+
+.btn-secondary {
+    color: #333;
+    background-color: var(--secondary) !important;
+    border: none
+}
+
+.btn-secondary:hover {
+    color: #333;
+    background-color: var(--secondary-hover) !important
+}
+
+.btn-dark-green {
+    background-color: var(--dark-green) !important;
+    border: none;
+    color: #fff;
+    padding: .5rem;
+    font-weight: 600
+}
+
+.bg-green{
+    background: var(--dark-green) !important;
+    color: #fff !important;
+}
+
+.bg-primary{
+    background: var(--primary) !important;
+    color: #fff !important;
+}
+
+.bg-secondary{
+    background: var(--secondary) !important;
+    color: #333 !important;
+}
+
+.bg-gscale{
+    background: var(--gscale) !important;
+    color: #333 !important;
+}
+
+.bg-dark-green{
+    background: var(--dark-green) !important;
+    color: #fff !important;
+}
+
+.text-primary {
+    color: var(--primary) !important
+}
+
+.text-secondary {
+    color: var(--secondary) !important
+}
+
+/* Normals */
+
+.badge-cat {
+    background: #f8f9fa;
+    border-radius: .5rem;
+    padding: .25rem .6rem;
+    font-weight: 600
+}
+
+.service-card {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1.25rem;
+    height: 100%
+}
+
+.maps-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px
+}
+
+.cta {
+    background: linear-gradient(90deg, var(--brand), #4b7cff);
+    color: #fff;
+    padding: 2.5rem;
+    border-radius: 12px
+}
+
+.hero {
+    background: url('../img/bg_main.png') no-repeat center;
+    color: #fff;
+    padding: 6rem 0;
+    height: 80dvh;
+}
+
+/* Imagem de Apresentação Pessoal */
+.person{
+    width: 250px;
+    height: 250px;
+    flex-basis: 250px;
+    object-fit: cover;
+}
+
+.paragraphAbout{
+    columns: 300px 2;
+    column-gap: 20px;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1060
+}
+
+#capacite{
+    background: url("../img/bn-middle1.png") no-repeat center;
+    color: #fff;
+}
+
+#contato{
+    background: url("../img/bn-contact1.png") no-repeat center;
+    background-size: cover;
+    color: #fff;
+}
+
+.footer {
+    background: #0b1220;
+    color: #fff;
+    padding: 2rem 0
+}
+
+nav{
+    background-color: #fff !important;
+    overflow-x: hidden !important;
+}
+
+@media(min-width:992px) {
+    .hero {
+        padding: 8rem 0
+    }
+}

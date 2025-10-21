@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/fav.png">
   <title>Estrada Consultoria</title>
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -21,21 +22,21 @@
   </a>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <nav class="navbar navbar-light bg-white shadow-sm overflow-x-hidden navbar-expand-lg">
     <div class="container">
-      <img src="img/logo.svg" width="150vh" alt="">
+      <img src="img/logo.svg" class="navbar-brand" width="100vh" alt="">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
         aria-expanded="false">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse extend" id="nav">
+      <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="#quem">Quem Somos</a></li>
           <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
           <li class="nav-item"><a class="nav-link" href="#treinamento">Treinamento</a></li>
           <li class="nav-item"><a class="nav-link" href="#beneficios">Benefícios</a></li>
           <li class="nav-item"><a class="nav-link" href="#fluxo">Fluxo</a></li>
-          <li class="nav-item"><a class="nav-link btn btn-outline-primary ms-2" href="#contato">Contato</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-primary ms-2" href="#contato">Contato</a></li>
         </ul>
       </div>
     </div>
@@ -43,7 +44,7 @@
 
   <!-- HERO -->
   <header class="hero">
-    <div class="container">
+    <div class="container p-4">
       <div class="row align-items-center">
         <div class="col-lg-7" data-aos="fade-right">
           <h1 class="display-6 text-light fw-bold">Soluções para sua empresa</h1>
@@ -69,14 +70,11 @@
   <!-- QUEM SOMOS -->
   <section id="quem" class="py-5">
     <div class="container">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-6" data-aos="fade-up">
+      <!-- Empresa -->
+      <div class="d-flex flex-column align-items-center mb-5">
+        <div class="col-lg-9 p-2" data-aos="fade-up">
           <h2 class="text-secondary">Quem <span class="text-primary fw-bold">Somos</span></h2>
-          <p>Criada para dar apoio aos empresários de micro e pequenas empresa e aos empreendedores interessados em
-            sistemas de gestão, gestão econômica e financeira, planejamento estratégico, planejamento de projetos e de
-            processos, para que possam organizar ou expandir o próprio negócio.</p>
-          <p>Oferecemos soluções empresariais, palestras, orientações, capacitações, treinamentos e gestão de projetos.
-          </p>
+          <p>Na Estrada Consultoria, organizamos o caos financeiro e transformamos números em decisões inteligentes. Implantamos controles que funcionam, planos sob medida e indicadores que mostram pra onde o dinheiro realmente vai. Nosso foco é simples: ajudar sua empresa a lucrar mais com o que já tem — sem complicar.</p>
           <div class="row mt-3">
             <div class="col-sm-4 text-center" data-aos="zoom-in" data-aos-delay="50">
               <img src="img/missao.svg" alt="Missão" class="mb-2">
@@ -95,9 +93,32 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6" data-aos="fade-left">
-          <img src="https://via.placeholder.com/640x420?text=Imagem+Quem+Somos" alt="Quem somos"
-            class="img-fluid rounded shadow-sm">
+      </div>
+
+      <!-- Juliana -->
+      <div class="d-flex flex-column mb-5 gap-5 p-1">
+        <span class="display-6 fw-bold text-secondary">Juliana <span class="text-primary">Estrada.</span></span>
+        <div class="px-3 gap-5 d-flex justify-content-center flex-wrap">
+          <img src="img/f_person_2.png" class="img-fluid rounded-pill object-fit-cover flex-grow-1" style="flex-basis: 200px; max-width: 300px;" alt="juliana estrada" data-aos="fade-left">
+          <span class="fs-5 paragraphAbout flex-grow-1" style="flex-basis: 200px;" data-aos="fade-left">
+              Consultora Organizacional e Contadora, com formação em Tecnologia da Informação, Ciências Contábeis, Controladoria e Finanças, além de MBA em Gestão de Projetos.
+              Com quase três décadas de experiência, atuou em posições de liderança financeira e gerencial nos setores de confecção e tecnologia, até consolidar sua carreira como consultora empresarial.
+              À frente da Estrada Consultoria, conduz projetos voltados à Gestão Econômica e Financeira, Planejamento Estratégico, Orçamento Empresarial, BPO Financeiro, Mapeamento de Processos (BPMN) e implantação de sistemas ERP.
+              É reconhecida pela capacidade de traduzir conceitos técnicos em soluções práticas que impulsionam o crescimento das micro e pequenas empresas, sustentando sua atuação na tríade Pessoas, Processos e Ferramentas.
+          </span>
+        </div>
+      </div>
+
+      <!-- Anderson -->
+      <div class="d-flex flex-column gap-5 p-1">
+        <span class="display-6 fw-bold text-secondary">Anderson <span class="text-primary">Estrada.</span></span>
+        <div class="px-3 d-flex justify-content-center gap-5 flex-wrap-reverse">
+          <span class="fs-5 paragraphAbout flex-grow-1" style="flex-basis: 200px;" data-aos="fade-left">
+            Consultor Empresarial, graduado em Ciências Contábeis, com MBAs em Gerenciamento de Projetos (USP), Gestão e Processos Industriais (SENAI-SC), Gestão Empresarial e Marketing (UniCesumar), além de especialização em Dinâmica dos Grupos pela SBDG.
+            Com mais de 24 anos de experiência em instituições associativas e de apoio ao empresário, atuou na FIEP (SESI e SENAI), SICREDI e ACIM, sendo também credenciado em associativismo pelo SEBRAE-PR.
+            Desde 2015, dedica-se à consultoria para o desenvolvimento de diversos setores da economia e ecossistemas empresariais. É membro do Project Management Institute (PMI), SBDG e IBCO, reunindo sólida vivência em gestão, associativismo e projetos estratégicos voltados à competitividade e inovação.
+          </span>
+          <img src="img/m_person_1.png" class="img-fluid rounded-pill object-fit-cover flex-grow-1" style="flex-basis: 20px; max-width: 300px;" alt="juliana estrada" data-aos="fade-left">
         </div>
       </div>
     </div>
@@ -106,10 +127,10 @@
   <!-- SERVIÇOS -->
   <section id="servicos" class="py-5 bg-light">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2>Serviços</h2>
-        <div>
-          <select class="form-select" id="serviceSelect" style="min-width:220px">
+      <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-4 p-2">
+        <span class="display-6 text-secondary fw-bold flex-grow-1" style="flex-basis: 400px;">Nossos <span class="text-primary">Serviços.</span></span>
+        <div class="d-flex flex-grow-1" style="flex-basis: 400px;">
+          <select class="form-select" id="serviceSelect">
             <option value="">Selecione o serviço</option>
             <option>Análise Financeira</option>
             <option>Controles Essenciais Informatizados</option>
@@ -173,18 +194,18 @@
   </section>
 
   <!-- CAPACITAR E CTA -->
-  <section class="py-5">
+  <section class="py-5" id="capacite">
     <div class="container">
       <div class="row g-4 align-items-center">
         <div class="col-md-7" data-aos="fade-right">
-          <h3>Capacite sua Equipe</h3>
-          <p class="text-muted">Assuma uma posição de vantagem. Torne sua equipe preparada para lidar com as demandas do
+          <h3 class="display-6 fw-bold">Capacite sua Equipe</h3>
+          <p class="fs-5">Assuma uma posição de vantagem. Torne sua equipe preparada para lidar com as demandas do
             mercado.</p>
-          <a href="#contato" class="btn btn-primary">Converse conosco</a>
+          <a href="#contato" class="btn btn-secondary">Converse conosco</a>
         </div>
         <div class="col-md-5" data-aos="fade-left">
-          <img src="https://via.placeholder.com/520x300?text=Capacite+sua+Equipe" alt="Capacite sua equipe"
-            class="img-fluid rounded">
+          <!-- <img src="https://via.placeholder.com/520x300?text=Capacite+sua+Equipe" alt="Capacite sua equipe"
+            class="img-fluid rounded"> -->
         </div>
       </div>
     </div>
@@ -193,39 +214,39 @@
   <!-- BENEFICIOS / LISTA -->
   <section id="beneficios" class="py-5 bg-light">
     <div class="container">
-      <h2>Experiência Especializada</h2>
+      <h2 class="text-secondary fw-bold">Experiência <span class="text-primary">Especializada.</span></h2>
       <p class="text-muted">A consultoria terceirizada ajuda empresas a melhorar eficiência, otimizar processos e
         capacitar funcionários.</p>
-      <div class="row mt-4 g-3">
-        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+      <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+        <div class="flex-grow-1" style="flex-basis: 400px;" data-aos="fade-up">
           <div class="p-3 border rounded">
-            <h6>1. Experiência e conhecimento especializado</h6>
+            <h2 class="text-secondary">1.</h2><h5>Experiência e conhecimento especializado</h5>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+        <div class="flex-grow-1" style="flex-basis: 400px;" data-aos="fade-up" data-aos-delay="50">
           <div class="p-3 border rounded">
-            <h6>2. Objetividade e perspectiva externa</h6>
+            <h2 class="text-secondary">2.</h2><h5>Objetividade e perspectiva externa</h5>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex-grow-1" style="flex-basis: 400px;" data-aos="fade-up" data-aos-delay="100">
           <div class="p-3 border rounded">
-            <h6>3. Soluções personalizadas</h6>
+            <h2 class="text-secondary">3.</h2><h5>Soluções personalizadas</h5>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="flex-grow-1" style="flex-basis: 400px;" data-aos="fade-up" data-aos-delay="150">
           <div class="p-3 border rounded">
-            <h6>4. Acesso a melhores práticas</h6>
+            <h2 class="text-secondary">4.</h2><h5>Acesso a melhores práticas</h5>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex-grow-1" style="flex-basis: 400px;" data-aos="fade-up" data-aos-delay="200">
           <div class="p-3 border rounded">
-            <h6>5. Economia de tempo e recursos</h6>
+            <h2 class="text-secondary">5.</h2><h5>Economia de tempo e recursos</h5>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+        <div class="flex-grow-1" style="flex-basis: 400px;" data-aos="fade-up" data-aos-delay="250">
           <div class="p-3 border rounded">
-            <h6>6. Desenvolvimento de habilidades internas</h6>
+            <h2 class="text-secondary">6.</h2><h5>Desenvolvimento de habilidades internas</h5>
           </div>
         </div>
       </div>
@@ -234,36 +255,71 @@
 
   <!-- FLUXO -->
   <section id="fluxo" class="py-5">
-    <div class="container">
-      <h2>Explore nosso Fluxo de Atendimento</h2>
+    <div class="container text-center d-flex justify-content-center flex-column align-items-center">
+      <div class="d-flex flex-column align-items-center mb-4">
+        <span class="text-secondary fw-bold fs-2">Explore nosso</span>
+        <span class="text-primary display-6 fw-bold">Fluxo de Atendimento</span>
+      </div>
       <p class="text-muted">Do diagnóstico à entrega: reuniões, aprovação do plano, contratação, execução e finalização.
       </p>
       <div class="text-center mt-4" data-aos="zoom-in">
-        <img src="https://via.placeholder.com/900x200?text=Fluxo+de+Atendimento" alt="Fluxo de Atendimento"
+        <img src="img/fluxo.png" alt="Fluxo de Atendimento"
           class="img-fluid rounded">
       </div>
     </div>
   </section>
 
   <!-- TESTEMUNHOS -->
-  <section class="py-5 bg-light">
+  <section class="py-5 bg-gscale">
     <div class="container">
-      <h2>Depoimento dos Clientes</h2>
-      <div class="row g-4 mt-3">
-        <div class="col-md-6" data-aos="fade-up">
-          <div class="p-4 border rounded">
-            <h5>Laila Matulaitis</h5>
-            <small class="text-muted">CEO | INTAK Fragrância Decor</small>
-            <p class="mt-2">"Indico a profissional Juliana, muito competente e capacitada... Através desse trabalho,
-              temos uma visão ampla de todos os nossos números, painel de indicadores e processos documentados."</p>
+      <h2 class="fw-bold text-secondary mb-5">Depoimento dos <span class="text-primary">Clientes.</span></h2>
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex">
+              <div class="p-4 bg-white border rounded">
+                <h5 class="text-primary">Laila Matulaitis</h5>
+                <small class="text-secondary">CEO | INTAK Fragrância Decor</small>
+                <hr class="mb-4">
+                <p class="mt-2">
+                  "Indico a profissional Juliana, muito competente e capacitada. Iniciamos o trabalho da consultoria financeira para cuidar dos desafios que estávamos enfrentado na gestão do departamento financeiro. Trabalhamos juntas por um ano e meio, sempre com muito comprometimento e dentro de prazos estabelecidos. Através desse trabalho, temos uma visão ampla de todos os nossos números, painel de indicadores para tomada de decisões e processos documentados através pops. Graças a consultoria muitas tarefas na empresa puderam ser delegadas."
+                </p>
+                <p>
+                  Conheça nais sobre a empresa <a class="text-primary fw-bold" href="https://intak.com.br" target="_blank">INTAK Fragrância Decor</a>
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="50">
-          <div class="p-4 border rounded">
-            <h5>Marina Mouco Valotto</h5>
-            <small class="text-muted">Biomédica | Clínica Derma Mais</small>
-            <p class="mt-2">"Consegui parametrizar e organizar todo meu financeiro e consequentemente tenho maior visão
-              do negócio."</p>
+          <div class="carousel-item">
+            <div class="d-flex">
+              <div class="p-4 bg-white border rounded">
+                <h5 class="text-primary">Marina Mouco Valotto</h5>
+                <small class="text-secondary"> Biomédica | Clínica Derma Mais</small>
+                <hr class="mb-4">
+                <p class="mt-2">
+                  "Contratei a consultoria financeira com a Juliana e foi uma experiência e tanto. Consegui parametrizar e organizar todo meu financeiro e consequentemente tenho maior visão do negócio. Recomendo o trabalho e inclusive vamos dar seguimento na questão dos processos que ainda não implementamos mas implementaremos em breve!"
+                </p>
+                <p>
+                  Conheça nais sobre a empresa <a class="text-primary fw-bold" href="https://clinicaesteticalondrina.com.br/" target="_blank">Clinica Derma Mais</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex">
+              <div class="p-4 bg-white border rounded">
+                <h5 class="text-primary">Ingrid</h5>
+                <small class="text-secondary"> Diretora | Wesra Engenharia Elétrica</small>
+                <hr class="mb-4">
+                <p class="mt-2">
+                  "Iniciamos a parceria com a Juliana em maio deste ano, nesse período se mostrou uma profissional competente, objetiva e ética. Tem nos assessorado na elaboração do planejamento financeiro e orçamentário da empresa, focado em redução de custos fixos e financeiros. Concluindo essa etapa, já temos alinhado a continuidade da parceria em outras demandas da empresa. Excelente profissional! Recomendo!"
+                </p>
+                <p>
+                  Conheça nais sobre a empresa <a class="text-primary fw-bold" href="https://www.wesra.com.br/" target="_blank">Wesra Engenharia Elétrica</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -273,26 +329,79 @@
   <!-- REGIOES ATENDIDAS -->
   <section class="py-5">
     <div class="container">
-      <h2>Atendemos todo o Brasil</h2>
+      <h2 class="text-secondary fw-bold">Atendemos todo o <span class="text-primary">Brasil.</span></h2>
       <p class="text-muted">Confira abaixo as regiões em que já estamos presentes.</p>
       <div class="row mt-3">
-        <div class="col-md-6" data-aos="fade-right">
-          <h6>Paraná</h6>
-          <ul>
-            <li>Londrina</li>
-            <li>Curitiba</li>
-            <li>Maringá</li>
-            <li>Cambé</li>
-          </ul>
+        <div class="col-md-6 d-flex justify-content-around gap-2 p-1" data-aos="fade-right">
+          <div>
+            <h6 class="text-primary fs-5 fw-bold">Paraná</h6>
+            <ul d-list="">
+              <li><span class="icon-checkmark-outline"></span>Londrina</li>
+              <li><span class="icon-checkmark-outline"></span>Alvorada do Sul</li>
+              <li><span class="icon-checkmark-outline"></span>Apucarana</li>
+              <li><span class="icon-checkmark-outline"></span>Arapongas</li>
+              <li><span class="icon-checkmark-outline"></span>Assaí</li>
+              <li><span class="icon-checkmark-outline"></span>Cambé</li>
+              <li><span class="icon-checkmark-outline"></span>Curitiba</li>
+              <li><span class="icon-checkmark-outline"></span>Ibiporã</li>
+              <li><span class="icon-checkmark-outline"></span>Ivaiporã</li>
+              <li><span class="icon-checkmark-outline"></span>Maringá</li>
+              <li><span class="icon-checkmark-outline"></span>Novo Itacolomi</li>
+              <li><span class="icon-checkmark-outline"></span> Toledo</li>										
+            </ul>
+          </div>
+          <div class="d-flex flex-column gap-2">
+            <div>
+              <span class="text-primary fs-5 fw-bold">Santa Catarina</span>
+              <ul>
+                <li><span class="icon-checkmark-outline"></span>Balneário Camboriú</li>
+              </ul>
+            </div>
+            
+            <div>
+              <span class="text-primary fs-5 fw-bold">Rio Grande do Sul</span>
+              <ul d-list="">
+                <li><span class="icon-checkmark-outline"></span>Sapiranga</li>										
+              </ul>
+            </div>
+  
+            <div>
+              <span class="text-primary fs-5 fw-bold">São Paulo</span>
+              <ul d-list="">
+                <li><span class="icon-checkmark-outline"></span>São Paulo</li>										
+              </ul>
+            </div>
+  
+            <div>
+              <span class="text-primary fs-5 fw-bold">Mato Grosso do Sul</span>
+              <ul d-list="">
+                <li><span class="icon-checkmark-outline"></span>Tacuru</li>										
+              </ul>
+            </div>
+  
+            <div>
+              <span class="text-primary fs-5 fw-bold">Goiás</span>
+              <ul d-list="">
+                <li><span class="icon-checkmark-outline"></span>Jataí</li>										
+              </ul>
+            </div>
+  
+            <div>
+              <span class="text-primary fs-5 fw-bold">Distrito Federal</span>
+              <ul d-list="">
+                <li><span class="icon-checkmark-outline"></span>Brasilia</li>										
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="col-md-6" data-aos="fade-left">
-          <img src="https://via.placeholder.com/520x320?text=Mapa+do+Brasil" alt="Mapa" class="maps-img">
+          <img src="img/mapa.png" alt="Mapa" class="maps-img mobile-hide">
         </div>
       </div>
       <div class="row mt-4">
         <div class="col-12 d-flex gap-3 flex-wrap">
-          <div class="p-3 border rounded">+500 Clientes atendidos</div>
-          <div class="p-3 border rounded">+1000 Projetos entregues</div>
+          <div class="p-3 border rounded flex-grow-1 bg-primary fw-bold">+500 Clientes atendidos</div>
+          <div class="p-3 border rounded flex-grow-1 bg-secondary fw-bold">+1000 Projetos entregues</div>
         </div>
       </div>
     </div>
@@ -300,53 +409,60 @@
 
   <!-- CTA contato -->
   <section id="contato" class="py-5 bg-light">
-    <div class="container">
-      <h2>Procurando uma solução personalizada?</h2>
-      <p class="text-muted">Converse conosco! Vamos entender suas necessidades e encontrar a melhor maneira de ajudá-lo.
-      </p>
-      <div class="row g-4 mt-3">
-        <div class="col-lg-6" data-aos="fade-up">
-          <form id="contactForm">
-            <div class="mb-3">
-              <label class="form-label">Nome</label>
-              <input type="text" class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">E-mail</label>
-              <input type="email" class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Telefone</label>
-              <input type="tel" class="form-control">
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Mensagem</label>
-              <textarea class="form-control" rows="4"></textarea>
-            </div>
-            <button class="btn btn-primary">Enviar</button>
-          </form>
+    <div class="container d-flex justify-content-center flex-wrap gap-5">
+
+      <div class="d-flex flex-column flex-grow-1" style="flex-basis: 400px;">
+        <div class="d-flex flex-column">
+          <span class="fs-3">Procurando uma</span>
+          <span class="fw-bold display-6">Solução Personalizada?</span>
         </div>
-        <div class="col-lg-6" data-aos="fade-left">
-          <h5>Contato</h5>
-          <p class="mb-1">(44) 99105-0013</p>
-          <p class="mb-1">juliana@estradaconsultoria.com.br</p>
-          <p>Redes sociais: <a href="https://www.instagram.com">Instagram</a> • <a
-              href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
+        <p class="">Converse conosco! Vamos entender suas necessidades e encontrar a melhor maneira de ajudá-lo.</p>
+        <p class="mb-1 btn btn-primary"><i class="bi bi-whatsapp"></i> (44) 99105-0013</p>
+        <p class="mb-1 fs-5 d-flex gap-2"><i class="bi bi-envelope-at-fill"></i> juliana@estradaconsultoria.com.br</p>
+        <p>Redes sociais: 
+          <a class="ms-2 text-light text-decoration-none" href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
+          <a class="ms-2 text-light text-decoration-none" href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        </p>
+      </div>
+
+      <div class="flex-grow-1" style="flex-basis: 400px;">
+        <form class="border d-flex flex-column gap-2 p-4 rounded text-bg-light">
+          <div class="form-floating mb-2">
+            <input type="text" class="form-control" name="nome" placeholder="Nome" autocomplete="name" required>
+            <label for="nome">Nome</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" name="email" placeholder="email" autocomplete="email" required>
+            <label for="email">Email</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" name="telefone" placeholder="telefone" autocomplete="tel" required>
+            <label for="telefone">Telefone</label>
+          </div>
+          <div class="form-floating">
+            <textarea name="mensagem" class="form-control" placeholder="Mensagem" style="height: 150px;" autocomplete="off" required></textarea>
+            <label for="mensagem">Mensagem</label>
+          </div>
+          
+          <button type="button" class="btn-dark-green align-self-end w-25">Enviar</button>
+        </form>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div>
+  <footer class="footer bg-dark-green">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="flex-grow-1">
+        <img src="img/logo_2.svg" alt="">
+      </div>
+      <div class="flex-grow-1 text-end">
         <strong>Estrada Consultoria LTDA © 2025</strong>
         <div class="small">CNPJ 28.144.427/0001-82</div>
       </div>
-      <div class="text-end small">
-        <div>Desenvolvido por Agência</div>
-      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="https://tecnobreve.onrender.com" class="text-decoration-none text-light" target="_blank">Desenvolvido por <img src="img/tecnobreve.png" class="img-fluid" width="200vh" alt=""></a>
     </div>
   </footer>
 
