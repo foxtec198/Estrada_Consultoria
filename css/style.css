@@ -86,6 +86,9 @@ body {
 }
 
 /* Normals */
+.nav-item:hover{
+    text-decoration: underline var(--primary) 5px;
+}
 
 .badge-cat {
     background: #f8f9fa;
