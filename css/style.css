@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --brand: #0d6efd;
-    --muted: #6c757d;
+    --muted: #b9c8d5;
 
     --primary: #547d67; 
     --primary-hover: #559774; 
@@ -11,16 +13,26 @@
     
     --dark-green: #06402b;
     --gscale: #fff8ec; 
+
+    --hero: url('../img/banner.jpeg')
 }
+
 
 body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    font-family: "Albert Sans", sans-serif;
+    letter-spacing: -1px;
 }
 
 /* Utilizaveis */
+.albert-sans {
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 
 .btn-primary {
     background-color: var(--primary) !important;
@@ -52,6 +64,11 @@ body {
     font-weight: 600
 }
 
+.text-dark-green {
+    color: var(--dark-green) !important;
+    font-weight: 700 
+}
+
 .bg-green{
     background: var(--dark-green) !important;
     color: #fff !important;
@@ -79,6 +96,10 @@ body {
 
 .text-primary {
     color: var(--primary) !important
+}
+
+.text-muted{
+    color: var(--muted) !important;
 }
 
 .text-secondary {
@@ -117,11 +138,21 @@ body {
     border-radius: 12px
 }
 
+/*
 .hero {
-    background: url('../img/bg_main.png') no-repeat center;
+    background: var(--hero) no-repeat center;
+    background-size: cover;
     color: #fff;
-    padding: 6rem 0;
-    height: 80dvh;
+    padding: 5rem 0;
+    height: 70dvh;
+}
+*/
+.hero{
+    height: 70vh;
+}
+
+.hero::before{
+    content: ""; display: flex; height: 100%; background: black; z-index: -1000000000;
 }
 
 /* Imagem de Apresentação Pessoal */
