@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
-    --brand: #0d6efd;
     --muted: #b9c8d5;
 
     --primary: #547d67; 
@@ -17,96 +14,19 @@
     --hero: url('../img/banner.jpeg')
 }
 
-
 body {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
     font-family: "Albert Sans", sans-serif;
     letter-spacing: -1px;
 }
 
-/* Utilizaveis */
-.albert-sans {
-  font-family: "Albert Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+nav{
+    z-index: 1000;
+    background-color: #fff !important;
+    overflow-x: hidden !important;
 }
 
-.btn-primary {
-    background-color: var(--primary) !important;
-    border: none;
-    color: #fff;
-}
-
-.btn-primary:hover {
-    color: #fff;
-    background-color: var(--primary-hover) !important
-}
-
-.btn-secondary {
-    color: #333;
-    background-color: var(--secondary) !important;
-    border: none
-}
-
-.btn-secondary:hover {
-    color: #333;
-    background-color: var(--secondary-hover) !important
-}
-
-.btn-dark-green {
-    background-color: var(--dark-green) !important;
-    border: none;
-    color: #fff;
-    padding: .5rem;
-    font-weight: 600
-}
-
-.text-dark-green {
-    color: var(--dark-green) !important;
-    font-weight: 700 
-}
-
-.bg-green{
-    background: var(--dark-green) !important;
-    color: #fff !important;
-}
-
-.bg-primary{
-    background: var(--primary) !important;
-    color: #fff !important;
-}
-
-.bg-secondary{
-    background: var(--secondary) !important;
-    color: #333 !important;
-}
-
-.bg-gscale{
-    background: var(--gscale) !important;
-    color: #333 !important;
-}
-
-.bg-dark-green{
-    background: var(--dark-green) !important;
-    color: #fff !important;
-}
-
-.text-primary {
-    color: var(--primary) !important
-}
-
-.text-muted{
-    color: var(--muted) !important;
-}
-
-.text-secondary {
-    color: var(--secondary) !important
-}
-
-/* Normals */
 .nav-item:hover{
     text-decoration: underline var(--primary) 5px;
 }
@@ -138,21 +58,37 @@ body {
     border-radius: 12px
 }
 
-/*
-.hero {
-    background: var(--hero) no-repeat center;
-    background-size: cover;
-    color: #fff;
-    padding: 5rem 0;
-    height: 70dvh;
-}
-*/
-.hero{
-    height: 70vh;
+.candleDiv{
+    position: absolute;
+    top: 10px;
 }
 
-.hero::before{
-    content: ""; display: flex; height: 100%; background: black; z-index: -1000000000;
+.candleContent{
+    position: relative;
+    top: auto;
+}
+
+.candleContent span{
+    background: #fff;
+    border-radius: 20px;
+}
+
+.icon-up-div{
+    position: relative;
+    left: 50%;
+}
+
+.iud-dark-green{
+    background-color: var(--dark-green);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: .5rem 1rem;
+    color: #fff;
+}
+
+.about-team{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 /* Imagem de Apresentação Pessoal */
@@ -190,11 +126,6 @@ body {
     background: #0b1220;
     color: #fff;
     padding: 2rem 0
-}
-
-nav{
-    background-color: #fff !important;
-    overflow-x: hidden !important;
 }
 
 @media(min-width:992px) {
