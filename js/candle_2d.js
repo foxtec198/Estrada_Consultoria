@@ -4,7 +4,7 @@ const canvas = document.getElementById("candles");
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth - 20;
-canvas.height = window.innerHeight;
+canvas.height = window.innerHeight - 350;
 
 const config = {
     candleCount: 60,      // número de velas por onda

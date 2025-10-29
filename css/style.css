@@ -25,16 +25,6 @@ body {
     height: 100dvh;
 }
 
-#quem{
-    background: url('../img/2.png') no-repeat top right;
-    backdrop-filter: blur(50px);
-}
-
-#servicos{
-    background: url('../img/1.png') no-repeat center left;
-    background-size: cover;
-    backdrop-filter: blur(50px);
-}
 
 nav{
     z-index: 1000;
