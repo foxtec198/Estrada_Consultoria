@@ -4,12 +4,12 @@ const canvas = document.getElementById("candles");
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth - 20;
-canvas.height = window.innerHeight - 200;
+canvas.height = window.innerHeight;
 
 const config = {
     candleCount: 60,      // número de velas por onda
     candleWidth: 12,      // largura das velas
-    pauseTime: 1000,      // pausa entre uma leva e outra (ms)
+    pauseTime: 100,      // pausa entre uma leva e outra (ms)
     speedMin: 0.4,        // velocidade mínima de subida
     speedMax: 1.0         // velocidade máxima de subida
 };
@@ -63,7 +63,7 @@ function startWave() {
 }
 
 function animate() {
-    ctx.fillStyle = "#FFF";
+    ctx.fillStyle = "ghostwhite";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     if (active) {
