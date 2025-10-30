@@ -13,6 +13,17 @@
     color: #fff;
     background-color: var(--primary-hover) !important
 }
+.btn-outline-primary {
+    color: #fff !important;
+    border: 2px solid var(--primary) !important;
+    background: transparent;
+    font-weight: 600
+}
+.btn-outline-primary:hover {
+    color: #fff !important;
+    background-color: var(--primary-hover) !important;
+    border: 2px solid var(--primary) !important;
+}
 .btn-secondary {
     color: #333;
     background-color: var(--secondary) !important;

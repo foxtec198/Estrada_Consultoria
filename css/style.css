@@ -22,7 +22,7 @@ body {
 }
 
 .hero{
-    height: 100dvh;
+    height: 60dvh;
 }
 
 
@@ -31,6 +31,7 @@ nav{
     background-color: #fff !important;
     overflow-x: hidden !important;
 }
+
 
 .nav-item:hover{
     text-decoration: underline var(--primary) 5px;
@@ -131,10 +132,4 @@ nav{
     background: #0b1220;
     color: #fff;
     padding: 2rem 0
-}
-
-@media(min-width:992px) {
-    .hero {
-        padding: 8rem 0
-    }
 }
