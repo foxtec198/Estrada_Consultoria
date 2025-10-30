@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/utils.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -85,7 +86,7 @@
             </div>
           </div>
         </div>
-        <video src="https://api.hubbix.com.br/videos/estrada.mp4" class="object-fit-contain flex-grow-1" height="400vh"
+        <video src="videos/EstradaReduzido.mp4" class="object-fit-contain flex-grow-1" height="400vh"
           style="flex-basis: 300px;" data-aos="fade-down" autoplay loop></video>
       </div>
     </div>
@@ -355,7 +356,7 @@
   <section class="py-5">
     <div class="container">
       <h2 class="text-secondary fw-bold">Atendemos todo o <span class="text-primary">Brasil.</span></h2>
-      <p class="text-muted">Confira abaixo as regiões em que já estamos presentes.</p>
+      <p class="text-dark">Você pode ser o próximo! Confira abaixo as regiões em que já estamos presentes.</p>
       <div class="row mt-3">
         <div class="col-md-6 d-flex justify-content-around gap-2 p-1" data-aos="fade-right">
           <div>
@@ -531,7 +532,7 @@
               autocomplete="off"></textarea>
             <label for="mensagem">Mensagem</label>
           </div>
-
+          <div class="g-recaptcha flex-grow-1" data-sitekey="6LcqaPorAAAAAMg3E1kk8JdJPg2AB0diUhU2SEoT"></div>
           <button type="submit" class="btn-dark-green align-self-end w-25">Enviar</button>
         </form>
       </div>
