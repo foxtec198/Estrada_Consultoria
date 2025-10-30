@@ -62,10 +62,14 @@
       <h2 class="text-secondary text-center display-6 fw-bold mb-5">Quem <span class="text-primary fw-bold">Somos</span></h2>
       <div class="d-flex flex-wrap">
         <!-- Video -->
-        <video id="videoEstrada" autoplay playsinline loop class="object-fit-cover flex-shrink-1 border rounded-5"
-          height="500vh" style="flex-basis: 300px;" data-aos="fade-down">
-          <source src="videos/EstradaReduzido.mp4" type="video/mp4">
-        </video>
+        <div class="d-flex flex-column justify-content-center align-items-center flex-grow-1" style="flex-basis: 300px;" data-aos="fade-down">
+          <video id="videoEstrada" autoplay playsinline class="object-fit-contain border rounded-5" height="500vh">
+            <source src="videos/EstradaReduzido.mp4" type="video/mp4">
+          </video>
+          <span class="fs-5 fst-italic mt-5">Caso o video não tenha iniciado,
+            <span style="cursor: pointer;" class="text-primary fw-bold"
+              onclick="document.getElementById('videoEstrada').play()">Clique Aqui!</span></span>
+        </div>
 
         <!-- Empresa -->
         <div class="d-flex flex-column  align-items-center flex-grow-1 mb-5" style="flex-basis: 300px;">
@@ -92,11 +96,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="mt-5">
-        <span class="fs-5 fst-italic">Caso o video não tenha iniciado,
-          <span style="cursor: pointer;" class="text-primary fw-bold"
-            onclick="document.getElementById('videoEstrada').play()">Clique Aqui!</span></span>
       </div>
     </div>
   </section>
