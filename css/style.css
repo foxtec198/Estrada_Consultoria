@@ -133,3 +133,43 @@ nav{
     color: #fff;
     padding: 2rem 0
 }
+
+.carousel-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carousel-control-prev.outside,
+.carousel-control-next.outside {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-30%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: background-color 0.3s;
+}
+
+.carousel-control-prev.outside:hover,
+.carousel-control-next.outside:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-control-prev.outside {
+  left: -60px; /* distância lateral */
+}
+
+.carousel-control-next.outside {
+  right: -60px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
