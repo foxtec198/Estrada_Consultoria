@@ -61,7 +61,8 @@
     <div class="container">
       <div class="d-flex flex-wrap justify-content-center align-items-center">
         <!-- Video -->
-        <div class="d-flex flex-column justify-content-center align-items-center flex-grow-1" style="flex-basis: 300px;" data-aos="fade-down">
+        <div class="d-flex flex-column justify-content-center align-items-center flex-grow-1" style="flex-basis: 300px;"
+          data-aos="fade-down">
           <video id="videoEstrada" autoplay playsinline class="object-fit-contain border rounded-5" height="500vh">
             <source src="videos/EstradaReduzido.mp4" type="video/mp4">
           </video>
@@ -307,7 +308,8 @@
                     financeira para cuidar dos desafios que estávamos enfrentado na gestão do departamento financeiro.
                     Trabalhamos juntas por um ano e meio, sempre com muito comprometimento e dentro de prazos
                     estabelecidos. Através desse trabalho, temos uma visão ampla de todos os nossos números, painel de
-                    indicadores para tomada de decisões e processos documentados através pops. Graças a consultoria muitas
+                    indicadores para tomada de decisões e processos documentados através pops. Graças a consultoria
+                    muitas
                     tarefas na empresa puderam ser delegadas."
                   </p>
                   <p>
@@ -324,8 +326,10 @@
                   <small class="text-secondary"> Biomédica | Clínica Derma Mais</small>
                   <hr class="mb-4">
                   <p class="mt-2">
-                    "Contratei a consultoria financeira com a Juliana e foi uma experiência e tanto. Consegui parametrizar
-                    e organizar todo meu financeiro e consequentemente tenho maior visão do negócio. Recomendo o trabalho
+                    "Contratei a consultoria financeira com a Juliana e foi uma experiência e tanto. Consegui
+                    parametrizar
+                    e organizar todo meu financeiro e consequentemente tenho maior visão do negócio. Recomendo o
+                    trabalho
                     e inclusive vamos dar seguimento na questão dos processos que ainda não implementamos mas
                     implementaremos em breve!"
                   </p>
@@ -360,10 +364,12 @@
         </div>
 
         <!-- Botões FORA do carrossel -->
-        <button class="carousel-control-prev outside" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <button class="carousel-control-prev outside" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </button>
-        <button class="carousel-control-next outside" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <button class="carousel-control-next outside" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
       </div>
@@ -528,20 +534,24 @@
           <span class="fw-bold display-6">Solução Personalizada?</span>
         </div>
         <p class="fs-5">Converse conosco! Vamos entender suas necessidades e encontrar a melhor maneira de ajudá-lo.</p>
-        <a href="https://wa.me/5544991050013" target="_blank" class="mb-1 btn btn-lg fw-bold btn btn-primary"><i class="bi bi-whatsapp"></i> 
+        <a href="https://wa.me/5544991050013" target="_blank" class="mb-1 btn btn-lg fw-bold btn btn-primary"><i
+            class="bi bi-whatsapp"></i>
           (44) 99105-0013</a>
-        <a href="mailto:juliana@estradaconsultoria.com.br" target="_blank" class="mb-1 btn btn-lg fw-bold btn-outline-primary"><i class="bi bi-envelope-at-fill"></i>
+        <a href="mailto:juliana@estradaconsultoria.com.br" target="_blank"
+          class="mb-1 btn btn-lg fw-bold btn-outline-primary"><i class="bi bi-envelope-at-fill"></i>
           juliana@estradaconsultoria.com.br</a>
         <p class="fs-5 mt-5">Redes sociais:
-          <a class="ms-2 text-light text-decoration-none" title="Perfil do instagram" href="https://www.instagram.com/estradaconsultoria/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"><i
+          <a class="ms-2 text-light text-decoration-none" title="Perfil do instagram"
+            href="https://www.instagram.com/estradaconsultoria/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"><i
               class="bi bi-instagram"></i></a>
-          <a class="ms-2 text-light text-decoration-none" title="Perfil do Linkedin" href="https://www.linkedin.com/company/estrada-consultoria/?originalSubdomain=br" target="_blank"><i
+          <a class="ms-2 text-light text-decoration-none" title="Perfil do Linkedin"
+            href="https://www.linkedin.com/company/estrada-consultoria/?originalSubdomain=br" target="_blank"><i
               class="bi bi-linkedin"></i></a>
         </p>
       </div>
 
       <div class="flex-grow-1" style="flex-basis: 400px;">
-        <form class="border shadow-lg d-flex flex-column gap-2 p-4 rounded text-bg-light" id="contactForm">
+        <form class="border shadow-lg d-flex flex-column gap-2 p-4 rounded text-bg-light" id="contactForm" name="contactForm">
           <div class="form-floating mb-2">
             <input type="text" class="form-control" name="nome" placeholder="Nome" autocomplete="name" required>
             <label for="nome">Nome</label>
@@ -559,7 +569,8 @@
               autocomplete="off"></textarea>
             <label for="mensagem">Mensagem</label>
           </div>
-          <div class="g-recaptcha flex-grow-1" data-sitekey="6LcqaPorAAAAAMg3E1kk8JdJPg2AB0diUhU2SEoT"></div>
+          <div class="g-recaptcha flex-grow-1" data-sitekey="6Lf6hgEsAAAAAI6Y6oQr1y0ygvyQ5ZRDCx2_Q0sY"
+            data-action="LOGIN"></div>
           <button type="submit" class="btn-dark-green align-self-end w-25">Enviar</button>
         </form>
       </div>
@@ -627,6 +638,15 @@
       alert('Obrigado! Sua mensagem foi enviada (simulação).');
       this.reset();
     });
+
+    window.onload = function () {
+      var recaptcha = document.forms["contactForm"]["g-recaptcha-response"];
+      recaptcha.required = true;
+      // Opcional: Adicionar mensagem de erro personalizada (oninvalid)
+      recaptcha.oninvalid = function (e) {
+        alert("Por favor, complete o reCAPTCHA para prosseguir.");
+      }
+    }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.min.js"></script>
   <script src="js/candle_2d.js" type="module"></script>
