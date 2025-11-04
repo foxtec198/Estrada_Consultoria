@@ -619,37 +619,10 @@
   <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init({ duration: 700, once: true });
-
-    // Simples filtro de serviços com select
-    document.getElementById('serviceSelect').addEventListener('change', function (e) {
-      const val = e.target.value.toLowerCase();
-      const cards = document.querySelectorAll('.service-card');
-      cards.forEach(c => {
-        const title = c.querySelector('h5').innerText.toLowerCase();
-        if (!val || title.includes(val)) c.parentElement.style.display = 'block'; else c.parentElement.style.display = 'none';
-      });
-    });
-
-    // Envio de form fictício
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      alert('Obrigado! Sua mensagem foi enviada (simulação).');
-      this.reset();
-    });
-
-    window.onload = function () {
-      var recaptcha = document.forms["contactForm"]["g-recaptcha-response"];
-      recaptcha.required = true;
-      // Opcional: Adicionar mensagem de erro personalizada (oninvalid)
-      recaptcha.oninvalid = function (e) {
-        alert("Por favor, complete o reCAPTCHA para prosseguir.");
-      }
-    }
-  </script>
+  <script>AOS.init({ duration: 700, once: true });</script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.min.js"></script>
   <script src="js/candle_2d.js" type="module"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
