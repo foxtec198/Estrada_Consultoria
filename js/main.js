@@ -1,3 +1,4 @@
+// Variaveis
 var spinner = '<span id="spin_ldg" class="spinner-border spinner-border-sm text-light" role="status"></span>'
 const mail = "foxtec198@gmail.com"
 
@@ -11,6 +12,7 @@ document.getElementById('serviceSelect').addEventListener('change', function (e)
     });
 });
 
+// Criação do Recaptcha
 window.onload = function () {
     var recaptcha = document.forms["contactForm"]["g-recaptcha-response"];
     recaptcha.required = true;
@@ -20,6 +22,7 @@ window.onload = function () {
     }
 }
 
+// Envio do Formulário
 document.getElementById('contactForm').addEventListener('submit', async function (e){
     e.preventDefault()
 
@@ -54,7 +57,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
                 method: 'POST', 
                 headers: {"Content-Type": "application/json"}, 
                 body: JSON.stringify({
-                    "title": `Novo pedido de Visita - ${nome}`,
+                    "title": `Não Responder - Novo Lead - ${nome}`,
                     "html": html
                 })
             }
