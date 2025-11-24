@@ -1,6 +1,7 @@
 // Variaveis
 var spinner = '<span id="spin_ldg" class="spinner-border spinner-border-sm text-light" role="status"></span>'
-const mail = "foxtec198@gmail.com"
+// const mail = "foxtec198@gmail.com"
+const mail = "juliana@estradaconsultoria.com.br"
 
 // Simples filtro de serviços com select
 document.getElementById('serviceSelect').addEventListener('change', function (e) {
